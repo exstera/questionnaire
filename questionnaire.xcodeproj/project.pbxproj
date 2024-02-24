@@ -13,6 +13,10 @@
 		45F801762B88C601008A121B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F801742B88C601008A121B /* Main.storyboard */; };
 		45F801782B88C602008A121B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F801772B88C602008A121B /* Assets.xcassets */; };
 		45F8017B2B88C602008A121B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F801792B88C602008A121B /* LaunchScreen.storyboard */; };
+		45F801882B890281008A121B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F801872B890281008A121B /* QuestionViewController.swift */; };
+		45F8018A2B8904D2008A121B /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F801892B8904D2008A121B /* FinalViewController.swift */; };
+		45F8018E2B891450008A121B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8018D2B891450008A121B /* Question.swift */; };
+		45F801902B89145B008A121B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8018F2B89145B008A121B /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		45F801772B88C602008A121B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45F8017A2B88C602008A121B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45F8017C2B88C602008A121B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45F801872B890281008A121B /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		45F801892B8904D2008A121B /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		45F8018D2B891450008A121B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		45F8018F2B89145B008A121B /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		45F8016D2B88C601008A121B /* questionnaire */ = {
 			isa = PBXGroup;
 			children = (
-				45F8016E2B88C601008A121B /* AppDelegate.swift */,
-				45F801702B88C601008A121B /* SceneDelegate.swift */,
-				45F801722B88C601008A121B /* ViewController.swift */,
-				45F801742B88C601008A121B /* Main.storyboard */,
-				45F801772B88C602008A121B /* Assets.xcassets */,
-				45F801792B88C602008A121B /* LaunchScreen.storyboard */,
-				45F8017C2B88C602008A121B /* Info.plist */,
+				45F801862B88C680008A121B /* Models */,
+				45F801822B88C657008A121B /* Supporting Files */,
+				45F801832B88C665008A121B /* View Controllers */,
+				45F801842B88C672008A121B /* Storyboards */,
+				45F801852B88C679008A121B /* Resources */,
 			);
 			path = questionnaire;
+			sourceTree = "<group>";
+		};
+		45F801822B88C657008A121B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45F8016E2B88C601008A121B /* AppDelegate.swift */,
+				45F801702B88C601008A121B /* SceneDelegate.swift */,
+				45F8017C2B88C602008A121B /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45F801832B88C665008A121B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				45F801722B88C601008A121B /* ViewController.swift */,
+				45F801872B890281008A121B /* QuestionViewController.swift */,
+				45F801892B8904D2008A121B /* FinalViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		45F801842B88C672008A121B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				45F801742B88C601008A121B /* Main.storyboard */,
+				45F801792B88C602008A121B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		45F801852B88C679008A121B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45F801772B88C602008A121B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		45F801862B88C680008A121B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45F8018D2B891450008A121B /* Question.swift */,
+				45F8018F2B89145B008A121B /* Answer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F8018A2B8904D2008A121B /* FinalViewController.swift in Sources */,
 				45F801732B88C601008A121B /* ViewController.swift in Sources */,
 				45F8016F2B88C601008A121B /* AppDelegate.swift in Sources */,
+				45F801902B89145B008A121B /* Answer.swift in Sources */,
+				45F8018E2B891450008A121B /* Question.swift in Sources */,
+				45F801882B890281008A121B /* QuestionViewController.swift in Sources */,
 				45F801712B88C601008A121B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = questionnaire/Info.plist;
+				INFOPLIST_FILE = "questionnaire/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = questionnaire/Info.plist;
+				INFOPLIST_FILE = "questionnaire/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
